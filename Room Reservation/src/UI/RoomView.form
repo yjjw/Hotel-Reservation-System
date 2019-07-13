@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="UI.RoomView">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1254" height="724"/>
+    </constraints>
+    <properties>
+      <preferredSize width="1200" height="900"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="af5b" binding="topPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-16757087"/>
+          <minimumSize width="400" height="100"/>
+          <preferredSize width="400" height="100"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="1d23d" class="javax.swing.JLabel" binding="nameTxt">
+            <constraints border-constraint="West"/>
+            <properties>
+              <font size="60"/>
+              <horizontalAlignment value="2"/>
+              <horizontalTextPosition value="2"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <grid id="c5a48" binding="infoButtonPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="true" same-size-vertically="false" hgap="0" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="East"/>
+            <properties>
+              <background color="-16757087"/>
+              <font size="16"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="ad604" class="javax.swing.JButton" binding="ResButton">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="60"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-12828862"/>
+                  <font size="25"/>
+                  <foreground color="-7820802"/>
+                  <text value="Your Reservation"/>
+                </properties>
+              </component>
+              <component id="130da" class="javax.swing.JButton" binding="InfoButton">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="60"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-12828862"/>
+                  <font size="25"/>
+                  <foreground color="-7820802"/>
+                  <text value="Your Info"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <hspacer id="5397c">
+            <constraints border-constraint="Center"/>
+          </hspacer>
+        </children>
+      </grid>
+      <grid id="9d8ec" binding="viewPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-12828862"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="196ad" binding="filterPanel" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-10527394"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="13343" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="36"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="bb287" class="javax.swing.JTextField" binding="priceTxtField">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-12828863"/>
+                  <font size="22"/>
+                  <foreground color="-65794"/>
+                  <minimumSize width="50" height="24"/>
+                  <preferredSize width="70" height="40"/>
+                </properties>
+              </component>
+              <component id="5bece" class="javax.swing.JComboBox" binding="typeComboBox">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-12828863"/>
+                  <font size="22"/>
+                  <foreground color="-65794"/>
+                  <model>
+                    <item value="Single Room"/>
+                    <item value="Double Room"/>
+                    <item value="Executive Room"/>
+                    <item value="Deluxe Suite"/>
+                    <item value="Presidential Suite"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="d1b4f" class="javax.swing.JCheckBox" binding="searchRoomWithPriceCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-10527394"/>
+                  <font size="22"/>
+                  <foreground color="-65794"/>
+                  <text value="Search Room with price below $"/>
+                </properties>
+              </component>
+              <component id="56fd2" class="javax.swing.JCheckBox" binding="searchRoomByTypeCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-10527394"/>
+                  <font size="22"/>
+                  <foreground color="-65794"/>
+                  <text value="Search Room by type :"/>
+                </properties>
+              </component>
+              <component id="5adec" class="javax.swing.JButton" binding="searchButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-12828862"/>
+                  <font size="22"/>
+                  <foreground color="-65794"/>
+                  <text value="Search"/>
+                </properties>
+              </component>
+              <component id="579de" class="javax.swing.JTextField" binding="rmNumField">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-12828863"/>
+                  <font size="22"/>
+                  <foreground color="-65794"/>
+                  <minimumSize width="50" height="24"/>
+                  <preferredSize width="70" height="40"/>
+                </properties>
+              </component>
+              <component id="cf0b2" class="javax.swing.JRadioButton" binding="directSearchByRoomRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-10527394"/>
+                  <font size="22"/>
+                  <foreground color="-65794"/>
+                  <text value="Direct Search by Room Number"/>
+                </properties>
+              </component>
+              <component id="be9c3" class="javax.swing.JRadioButton" binding="searchByUsingFilterRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-10527394"/>
+                  <font size="22"/>
+                  <foreground color="-65794"/>
+                  <selected value="true"/>
+                  <text value="Search by using filter"/>
+                </properties>
+              </component>
+              <component id="31ffe" class="javax.swing.JRadioButton" binding="maximumPriceRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-10527394"/>
+                  <font size="22"/>
+                  <foreground color="-65794"/>
+                  <text value="Maximum Price"/>
+                </properties>
+              </component>
+              <component id="3c827" class="javax.swing.JRadioButton" binding="minimumPriceRadioButton" default-binding="true">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-10527394"/>
+                  <font size="22"/>
+                  <foreground color="-65794"/>
+                  <text value="Minimum Price"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="16e6d" binding="infoPanel" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12828862"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="5de88" class="javax.swing.JLabel" binding="priceField">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="60"/>
+                  <foreground color="-65794"/>
+                  <text value="N/A"/>
+                </properties>
+              </component>
+              <component id="e99a5" class="javax.swing.JLabel" binding="priceTxt">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="60"/>
+                  <foreground color="-65794"/>
+                  <text value="Price:"/>
+                </properties>
+              </component>
+              <component id="ee25d" class="javax.swing.JLabel" binding="typeField">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="60"/>
+                  <foreground color="-65794"/>
+                  <text value="N/A"/>
+                </properties>
+              </component>
+              <component id="4d70e" class="javax.swing.JLabel" binding="typeTxt">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <font size="60"/>
+                  <foreground color="-65794"/>
+                  <text value="Type:"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="722da" class="javax.swing.JButton" binding="reserveButton">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-10527394"/>
+              <font size="40"/>
+              <foreground color="-65794"/>
+              <hideActionText value="false"/>
+              <text value="Reserve this room"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="fe2ae" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="West"/>
+        <properties>
+          <background color="-12828862"/>
+          <preferredSize width="300" height="300"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <scrollpane id="ddcf1">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-12828862"/>
+              <foreground color="-10527394"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="fd85f" class="javax.swing.JList" binding="roomList">
+                <constraints/>
+                <properties>
+                  <background color="-12828862"/>
+                  <font size="30"/>
+                  <foreground color="-2502201"/>
+                  <layoutOrientation value="0"/>
+                  <model/>
+                  <name value=""/>
+                  <selectionBackground color="-16777216"/>
+                  <selectionForeground color="-65794"/>
+                  <selectionMode value="0"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <component id="999f3" class="javax.swing.JLabel" binding="rlTitle">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font size="30"/>
+              <foreground color="-65794"/>
+              <text value="  Room List"/>
+            </properties>
+          </component>
+          <component id="b60d3" class="javax.swing.JButton" binding="resetButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-7820802"/>
+              <font size="25"/>
+              <foreground color="-65794"/>
+              <horizontalAlignment value="0"/>
+              <text value="Reset"/>
+              <verticalAlignment value="0"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="buttonGroup1">
+      <member id="be9c3"/>
+      <member id="cf0b2"/>
+      <member id="31ffe"/>
+      <member id="3c827"/>
+    </group>
+    <group name="buttonGroup2">
+      <member id="7322"/>
+      <member id="1a885"/>
+    </group>
+  </buttonGroups>
+</form>
